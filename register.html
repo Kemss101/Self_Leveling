@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Self Leveling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="logo-section">
+            <img src="images/Self-Leveling_logo.png" alt="Self Leveling Logo" class="logo">
+            <h1>SELF LEVELING</h1>
+        </div>
+        <div class="form-section">
+            <h2>Let's Get Started</h2>
+            <form action="register.php" method="POST" enctype="multipart/form-data">
+                <input type="text" name="username" placeholder="Your Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <select name="gender" required>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <input type="file" name="profile_image" class="file-upload" required>
+                <div class="button-row">
+                    <button type="submit" class="login-btn"><a href="fitness_tracking.html">Register</button>
+                    <button type="button" class="cancel-btn"><a href="index.html">Cancel</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="index.html">Login Here</a></p>
+        </div>
+    </div>
+</body>
+</html>

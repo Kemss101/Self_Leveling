@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6b8cd8, #8de0c2);
+}
+
+.login-page {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #3a3c97, #b798f1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.logo-section .logo {
+    width: 230px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.form-section input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.login-btn {
+    background-color: #4185f4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+select, .file-upload, input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, #ab9bf2, #d2f5ff);
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background: #ad7aff;
+    color: white;
+    border-radius: 10px;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 20px;
+    background: linear-gradient(to right, green, lightgreen);
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 90%;
+}
+
+.start-btn, .dashboard-btn {
+    background-color: #4185f4;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    width: 90%;
+}
+
+.main-panel {
+    width: 75%;
+    padding: 20px;
+    position: relative;
+}
+
+.logout-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+table th, table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #6a4c93;
+    color: white;
+}
+
+.nav-panel {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-panel ul li {
+    margin: 0 20px;
+}
+
+.nav-panel ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-panel ul li a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-nav {
+    width: 200px;
+    background-color: #2c3e50;
+    color: #fff;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar-nav .nav-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-nav ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sidebar-nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #34495e;
+}
+
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Self Leveling</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function startWorkout() {
+            alert("Workout started!");
+        }
+
+        function stopWorkout() {
+            alert("Workout stopped.");
+        }
+
+        function logout() {
+            window.location.href = "logout.php";
+        }
+    </script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <img src="<?= htmlspecialchars($image) ?>" class="profile-img" alt="User">
+            <p class="user-info"><?= htmlspecialchars($gender) ?><br><strong><?= htmlspecialchars($username) ?></strong></p>
+
+            <label>Choose exercise</label>
+            <select>
+                <option>Squat</option>
+                <option>Deadlift</option>
+                <option>Push-Up</option>
+            </select>
+
+            <p>Reps: 0</p>
+            <p>Current Exercise: None</p>
+            <p>Time Elapsed: 0s</p>
+            <div class="progress-bar"></div>
+            <p>Calories Burned: 0.00</p>
+
+            <select>
+                <option>Low</option>
+                <option selected>Medium</option>
+                <option>High</option>
+            </select>
+
+            <input type="number" placeholder="Enter your weight">
+
+            <button class="start-btn" onclick="startWorkout()">Start Workout</button>
+            <button class="cancel-btn" onclick="stopWorkout()">Stop</button>
+            <button class="dashboard-btn">View Dashboard</button>
+        </div>
+
+        <div class="main-panel">
+            <button class="logout-btn" onclick="logout()">Logout</button>
+            <p>You burned 1.39 calories.<br>Keep it up! Try to exercise again to level up.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Exercise Name</th>
+                        <th>Duration</th>
+                        <th>Calories Burned</th>
+                        <th>Repetitions</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
